@@ -1,0 +1,11 @@
+id,name,address,city,state,zip
+1,Miami-Dade Main Library,101 W Flagler St,Miami,FL,33130
+2,Stephen P. Clark Government Center,111 NW 1st St,Miami,FL,33128
+3,Miami City Hall,3500 Pan American Dr,Miami,FL,33133
+4,Coral Gables City Hall,405 Biltmore Way,Coral Gables,FL,33134
+5,Tampa City Hall,315 E Kennedy Blvd,Tampa,FL,33602
+6,Florida Historic Capitol,400 S Monroe St,Tallahassee,FL,32399
+7,U.S. Census Bureau Headquarters,4600 Silver Hill Rd,Washington,DC,20233
+8,ZIP code only (no city or state),111 NW 1st St,,,33128
+9,Misspelled street,101 W Flaglr St,Miami,FL,33130
+10,No house number (rejected locally),Main Street,Miami,FL,33130

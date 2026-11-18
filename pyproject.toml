@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "census-batch-geocoder"
+version = "1.0.0"
+description = "Batch geocode CSV address files with the free U.S. Census Bureau Geocoder: CSV, GeoJSON and a match-quality report."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Malla Reddy Pashapu" }]
+requires-python = ">=3.10"
+dependencies = ["requests>=2.28"]
+keywords = ["geocoding", "census", "gis", "geojson", "addresses"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering :: GIS",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "pytest-cov>=4", "ruff>=0.5"]
+
+[project.scripts]
+census-geocode = "censusgeo.cli:main"
+
+[project.urls]
+Repository = "https://github.com/mpashapu/census-batch-geocoder"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]

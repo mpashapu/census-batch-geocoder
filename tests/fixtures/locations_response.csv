@@ -1,0 +1,4 @@
+"2","111 NW 1st St, Miami, FL, 33128","Match","Exact","111 NW 1ST ST, MIAMI, FL, 33128","-80.195360,25.775010","123456789","L"
+"1","101 W Flagler St, Miami, FL, 33130","Match","Non_Exact","101 W FLAGLER ST, MIAMI, FL, 33130","-80.195550,25.774100","987654321","R"
+"3","9999 Nowhere Rd, Miami, FL, 33130","No_Match"
+"4","1 Main St, Springfield, , ","Tie"
